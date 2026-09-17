@@ -1,0 +1,101 @@
+{
+  "layer": "top",
+  "position": "top",
+
+  "width": 50,
+  "margin-top": 15,
+
+  "spacing": 4,
+
+  "modules-center": [
+    "hyprland/workspaces",
+    "sway/workspaces",
+    "custom/applauncher",
+    "network",
+    "bluetooth",
+    "battery",
+    "pulseaudio",
+    "tray",
+    "clock"
+  ],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false,
+    "tooltip": false
+  },
+
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false,
+    "tooltip": false
+  },
+
+  "custom/applauncher": {
+    "format": "〇",
+    "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 15",
+    "tooltip": false
+  },
+
+  "network": {
+    "format-wifi": " {bandwidthDownBits}",
+    "format-ethernet": " {bandwidthDownBits}",
+    "format-disconnected": "󰤮 No Network",
+    "interval": 5,
+    "tooltip": false,
+    "on-click": "iwmenu -l custom --launcher-command \"wofi --dmenu --location=top -y 15 --prompt '{hint}' {password_flag:--password}\" --interactive"
+  },
+
+  "bluetooth": {
+    "format": "",
+    "format-on": "",
+    "format-connected": "",
+    "format-disabled": "󰂲",
+    "format-off": "󰂲",
+    "tooltip": false,
+    "on-click": "overskride"
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-full": "󱈑 {capacity}%",
+    "format-icons": [
+      "󱊡",
+      "󱊢",
+      "󱊣"
+    ]
+  },
+
+  "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 150,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-muted": " ",
+    "format-icons": [
+      "",
+      "",
+      " "
+    ],
+    "on-click": "pavucontrol",
+    "tooltip": false
+  },
+
+  "tray": {
+    "spacing": 10,
+    "tooltip": false
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": "󰅐 {:%H:%M:%S}",
+    "tooltip": false
+  }
+}

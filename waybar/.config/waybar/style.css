@@ -1,0 +1,139 @@
+* {
+  /* General taskbar font, I like departure mono ^-^*/
+  font-family: Departure Mono;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 0px;
+  background: transparent;
+}
+
+window#waybar {
+  background-image: linear-gradient(to bottom, #121615 100%);
+  border-radius: 20px;
+  padding: 0px;
+  border-style: none;
+}
+
+#battery,
+#network,
+#bluetooth,
+#clock,
+#custom-applauncher,
+#tray,
+#workspaces,
+#pulseaudio {
+  background-image: linear-gradient(to bottom, #242424 100%);
+
+  margin: 6px;
+  margin-right: 0px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  color: #ffffff;
+
+  border-style: none;
+  transition-duration: 120ms;
+}
+
+#network:hover {
+  background-image: linear-gradient(to bottom, #88e5ec 100%);
+  color: #141216;
+  transition-duration: 120ms;
+}
+
+
+#clock {
+  margin-right: 6px;
+}
+
+#pulseaudio:hover {
+  background-image: linear-gradient(to bottom, #88e5ec 100%);
+  color: #141216;
+  transition-duration: 120ms;
+}
+
+#custom-applauncher {
+  font-weight: bold;
+  transition-duration: 120ms;
+}
+#custom-applauncher:hover {
+  background-image: linear-gradient(to bottom, #88e5ec 100%);
+  color: #141216;
+  transition-duration: 120ms;
+}
+
+#tray menu {
+  background-color: #141216;
+  color: #88e5ec;
+  padding: 4px;
+}
+#tray menu menuitem {
+  background-image: linear-gradient(to bottom, #121615 100%);
+
+  margin: 3px;
+  color: #88e5ec;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #121615;
+}
+#tray menu menuitem:hover {
+  background-image: linear-gradient(to bottom, #121615 100%);
+  color: #88e5ec;
+  font-weight: bold;
+}
+
+#workspaces button {
+  transition-duration: 100ms;
+  all: initial;
+  min-width: 0;
+  font-weight: bold;
+  color: #ffffff;
+  margin-right: 0.2cm;
+  margin-left: 0.2cm;
+}
+
+#workspaces button:hover {
+  transition-duration: 120ms;
+  color: #2790a6;
+}
+#workspaces button.focused {
+  color: #88e5ec;
+  font-weight: bold;
+}
+#workspaces button.active {
+  color: #88e5ec;
+  font-weight: bold;
+}
+#workspaces button.urgent {
+  color: #cd375e;
+}
+
+#battery {
+  background-color: #222222;
+  
+}
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  color: #1d2021;
+  background-color: #cd375e;
+}
+tooltip {
+  background: #141216;
+}
+#bluetooth {
+  background-image: linear-gradient(to bottom, #242424 0%, #242424 100%);
+
+  margin: 6px;
+  margin-right: 0px;
+
+  padding: 4px 7px;
+  min-width: 16px;
+
+  border-radius: 20px;
+  font-size: 16px;
+}
+#bluetooth:hover {
+  background-image: linear-gradient(to bottom, #88e5ec 100%);
+  color: #141216;
+  transition-duration: 120ms;
+}

@@ -1,0 +1,14 @@
+sway
+waybar
+kitty
+wofi
+nautilus
+libpulse
+playerctl
+brightnessctl
+sway-contrib
+wl-clipboard
+polkit-gnome
+breeze-gtk
+pavucontrol
+fastfetch

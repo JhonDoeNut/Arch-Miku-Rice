@@ -1,0 +1,82 @@
+* {
+  font-family: Departure Mono;
+  background: transparent;
+  color: #ffffff;
+}
+
+#window {
+  background-image: linear-gradient(
+    to bottom,
+    #121615 0%,
+    #121615 100%
+  );
+
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #88e5ec;
+}
+
+#inner-box {
+  padding-top: 12px;
+}
+
+#entry {
+  background: transparent;
+  color: #ffffff;
+
+  border-style: none;
+  border-radius: 20px;
+
+  padding: 6px 10px;
+  margin: 4px 12px;
+}
+
+#entry:selected {
+  background-image: linear-gradient(
+    to bottom,
+    #242424 0%,
+    #242424 100%
+  );
+
+  color: #88e5ec;
+  font-weight: bold;
+  outline: none;
+}
+
+#input {
+  background-image: linear-gradient(
+    to bottom,
+    #242424 0%,
+    #242424 100%
+  );
+
+  color: #ffffff;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #2790a6;
+  border-radius: 20px;
+
+  padding: 10px 12px;
+  margin: 8px;
+
+  font-style: normal;
+}
+
+#input:focus {
+  background-image: linear-gradient(
+    to bottom,
+    #242424 0%,
+    #242424 100%
+  );
+
+  color: #ffffff;
+  border-color: #88e5ec;
+  font-style: normal;
+}
+
+#img {
+  padding: 4px;
+  margin-right: 6px;
+}

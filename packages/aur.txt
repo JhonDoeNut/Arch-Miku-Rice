@@ -1,0 +1,9 @@
+eww
+iwmenu
+networkmanager-dmenu-git
+overskride
+themix-full-git
+ungoogled-chromium-bin-debug
+unimatrix-git
+yay
+yay-debug
